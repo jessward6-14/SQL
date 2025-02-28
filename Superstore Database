@@ -1,0 +1,18 @@
+#This project utilizes the following superstore data:
+
+--order items by price
+select*
+from superstore
+order by price desc;
+--show a statstic about item prices
+select sum(price)
+from superstore
+where category= 'Electronics';
+--statistic about price for items in 'kitchen supplies'
+select sum(price)
+from superstore
+where category= 'Kitchen Supplies';
+--how many Memory foam mattresses in stock
+select stock_quantity
+from superstore
+where item_name= 'Memory Foam Mattress';
